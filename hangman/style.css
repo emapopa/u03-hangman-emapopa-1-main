@@ -1,0 +1,77 @@
+*,
+::before,
+::after {
+box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Mono', 
+  monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #09405e;
+  color: rgb(141, 115, 115);
+}
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#res {
+  display: flex;
+  flex-flow: wrap row;
+  margin: 0;
+}
+
+
+#alphabet {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  margin: 5%;
+  width: 45%; 
+}
+
+#hangman {
+  flex: 2 1 auto;
+}
+
+.letter:hover {
+  background-color: rgb(241, 62, 62);
+  border: 0.1em solid #855be6;
+  border-radius: 0.5em;
+}
+
+#answer {
+  text-align: center;
+  margin: 0.5em;
+  font-size: 40px;
+ padding: 1em;
+}
+
+.letter {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px 5px;
+  border: 0.1em solid rgb(75, 210, 169);
+  border-radius: 0.5em;
+}
+
+.reset {
+	color: green;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.reset:hover {
+	color: white;
+}
+
+#result {
+  text-align: center;
+  font-size: 2em;
+}
